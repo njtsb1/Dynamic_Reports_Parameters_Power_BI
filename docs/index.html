@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dynamic Reports Parameters Power BI</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body class="theme-dark" data-lang="en">
+  <header class="app-header" role="banner">
+    <div class="brand">
+      <h1 id="app-title">Dynamic Reports Parameters Power BI</h1>
+      <p id="app-subtitle" class="muted">Interactive demo — parameters by category and by value</p>
+    </div>
+
+    <div class="controls" role="region" aria-label="Global controls">
+      <div class="lang-switch" aria-label="Language selection">
+        <label for="lang" class="visually-hidden">Language</label>
+        <select id="lang" aria-label="Select language">
+          <option value="en">English (EN)</option>
+          <option value="pt-BR">Português (PT-BR)</option>
+          <option value="es">Español (ES)</option>
+        </select>
+      </div>
+
+      <button id="theme-toggle" class="icon-btn" aria-pressed="true" aria-label="Toggle dark mode">
+        <svg id="icon-moon" class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg id="icon-sun" class="icon hidden" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.76 4.84l-1.8-1.79L3.17 5.84l1.79 1.79 1.8-2.79zM1 13h3v-2H1v2zm10 9h2v-3h-2v3zm8.83-17.17l-1.79 1.79 1.8 1.79 1.79-1.79-1.79-1.79zM17 13h6v-2h-6v2zM6.76 19.16l1.8 1.79 1.79-1.79-1.8-1.79-1.79 1.79zM12 6a6 6 0 100 12 6 6 0 000-12z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="panel" aria-labelledby="param-cat-title">
+      <h2 id="param-cat-title">Parameters by Category</h2>
+
+      <form id="category-form" class="param-form" role="form" aria-label="Category parameter form">
+        <fieldset>
+          <legend class="visually-hidden">Choose category</legend>
+          <div class="radio-group" role="radiogroup" aria-label="Category options">
+            <label>
+              <input type="radio" name="category" value="country" checked />
+              <span class="label-text">Country</span>
+            </label>
+            <label>
+              <input type="radio" name="category" value="month" />
+              <span class="label-text">Month Name</span>
+            </label>
+            <label>
+              <input type="radio" name="category" value="product" />
+              <span class="label-text">Product</span>
+            </label>
+            <label>
+              <input type="radio" name="category" value="semester" />
+              <span class="label-text">Semesters</span>
+            </label>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="chart-card" role="region" aria-label="Category chart">
+        <h3 id="chart-title">Sum of Profit by Country</h3>
+        <div id="chart" class="chart" aria-hidden="false"></div>
+        <div id="chart-legend" class="chart-legend" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="panel" aria-labelledby="param-val-title">
+      <h2 id="param-val-title">Parameters by Value</h2>
+
+      <form id="value-form" class="param-form" role="form" aria-label="Value parameter form">
+        <label for="value-select" class="visually-hidden">Choose metric</label>
+        <select id="value-select" aria-label="Select metric">
+          <option value="profit">Profit</option>
+          <option value="sales">Sales</option>
+          <option value="quantity">Quantity</option>
+        </select>
+      </form>
+
+      <div class="chart-card" role="region" aria-label="Value chart">
+        <h3 id="chart2-title">Sum of Profit by Country</h3>
+        <div id="chart2" class="chart"></div>
+      </div>
+    </section>
+
+    <section class="panel narrative" aria-labelledby="narrative-title">
+      <h2 id="narrative-title">Presentation Narrative</h2>
+      <p id="narrative-text">
+        This interactive view lets you switch the dimension used to slice the data and the metric used to measure performance.
+        Use the **Category** parameter to view profit by country, month, product, or semester.
+        Use the **Value** parameter to toggle between Profit, Sales, and Quantity.
+        The charts update instantly to support quick exploration and storytelling during client presentations.
+      </p>
+      <p class="callout" id="presentation-tips">
+        <strong>Tip:</strong> Start with the category that best matches the client's question, then switch metrics to validate hypotheses.
+      </p>
+    </section>
+  </main>
+
+  <footer class="app-footer" role="contentinfo">
+    <small>Dynamic Reports Parameters Power BI</small>
+  </footer>
+
+  <script src="./src/script.js" defer></script>
+</body>
+</html>

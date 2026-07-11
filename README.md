@@ -1,5 +1,3 @@
-Daily learning
-
 # Creating Dynamic Reports Using Parameters in Power BI
 
 Project developed at the Bootcamp Power BI Analyst Training, under the guidance of specialist [Juliana Zanelatto](https://github.com/julianazanelatto/ "Juliana Zanelatto").
@@ -16,19 +14,19 @@ Therefore, the guidelines are:
 
 Country
 
-![Screenshot](./img/01_country.png)
+![Screenshot](./docs/public/01_country.png)
 
 Month Name
 
-![Screenshot](./img/02_Month-name.png)
+![Screenshot](./docs/public/02_Month-name.png)
 
 Product
 
-![Screenshot](./img/03_Product.png)
+![Screenshot](./docs/public/03_Product.png)
 
 Semester
 
-![Screenshot](./img/04_Semester.png)
+![Screenshot](./docs/public/04_Semester.png)
 
 [LICENSE](/LICENSE)
 

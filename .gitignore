@@ -1,0 +1,95 @@
+# Node dependencies
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build output
+/dist/
+/build/
+/out/
+/public/build/
+/.parcel-cache/
+/.next/
+/.nuxt/
+/.astro/
+/.vercel/
+/vercel-build/
+/netlify/
+/.gh-pages/
+
+# Production files
+/*.tgz
+
+# Environment files
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.secret
+
+# Logs
+logs/
+*.log
+debug.log*
+/coverage/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~ 
+*.orig
+
+# Lock files (optional: include if you don't want to commit lockfiles)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Cache
+.cache/
+.cache-loader/
+.eslintcache
+.stylelintcache
+/.turbo/
+.pnp.*
+/bower_components/
+
+# Test and coverage
+/coverage/
+/nyc_output/
+/jest-cache/
+/jest/
+
+# Generated assets
+*.min.js
+*.min.css
+*.map
+*.gz
+*.br
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+
+# Misc
+/.history/
+dist-*/
+.idea_modules/
